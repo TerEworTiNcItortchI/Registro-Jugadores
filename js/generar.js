@@ -87,13 +87,22 @@ function validar() {
     var usuario = document.getElementById("usuario_login").value
     var contraseña = document.getElementById("contraseña_login").value
 
-    if (usuario == "sHaTiCKeTHU" && contraseña == "Ly1wTxwWUz2"){
-        window.location("../index.html")
+    if (usuario.length > 0 || contraseña.length > 0) {
+        if (usuario == "TerEworTiNcItortchI") {
+            if (contraseña != "eOcmvii49GbGD$#PHOcNLxvj") {
+                alert("acceso denegado")
+            } else {
+                location.href = "generar.html";
+            }
+        } else {
+            alert("acceso denegado")
+        }
     } else {
-        console.log('error');
-        
-    }
+        alert("acceso denegado")
 
-    console.log("usuario: "+ usuario + "\ncontraseña: " + contraseña);
-    
+    }
+}
+
+function salir(){
+    location.href = "index.html";
 }
