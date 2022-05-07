@@ -55,13 +55,13 @@ function guardar_txt() {
         + "\n::exp::" + expedicion
         + "\n::obs::" + jugador[12]
         + "\n::pos::541030"
-        + "\n!1::send " + arr_nac[0] + "{tab}" + arr_nac[1] + "{tab}" + arr_nac[2]
-        + "\n!2::send " + arr_exp[0] + "{tab}" + arr_exp[1] + "{tab}" + arr_exp[2]
-    // + "\n!2::send "+
-    // + "\n!3::send "+
-    // + "\n!4::send "+arr_exp[0]
-    // + "\n!5::send "+arr_exp[1]
-    // + "\n!6::send "+arr_exp[2]
+        + "\n!1::send "+arr_nac[0] + "{tab}" + arr_nac[1] + "{tab}" + arr_nac[2]
+        + "\n!2::send "+arr_exp[0] + "{tab}" + arr_exp[1] + "{tab}" + arr_exp[2]
+        // + "\n!2::send "+
+        // + "\n!3::send "+
+        // + "\n!4::send "+arr_exp[0]
+        // + "\n!5::send "+arr_exp[1]
+        // + "\n!6::send "+arr_exp[2]
     guardarArchivoDeTexto(texto, nombre_archivo);
 }
 
@@ -80,29 +80,4 @@ const guardarArchivoDeTexto = (contenido, nombre) => {
 function convertDateFormat(string) {
     var info = string.split('-').reverse().join('/');
     return info;
-}
-
-// validar formulario
-function validar() {
-    var usuario = document.getElementById("usuario_login").value
-    var contraseña = document.getElementById("contraseña_login").value
-
-    if (usuario.length > 0 || contraseña.length > 0) {
-        if (usuario == "TerEworTiNcItortchI") {
-            if (contraseña != "eOcmvii49GbGD$#PHOcNLxvj") {
-                alert("acceso denegado")
-            } else {
-                location.href = "generar.html";
-            }
-        } else {
-            alert("acceso denegado")
-        }
-    } else {
-        alert("acceso denegado")
-
-    }
-}
-
-function salir(){
-    location.href = "index.html";
 }
