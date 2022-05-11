@@ -1,18 +1,28 @@
 body {
   font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-.titulo{
-    font-family: 'Krub', sans-serif;
-    font-weight: bold;
+.titulo {
+  font-family: "Krub", sans-serif;
+  font-weight: bold;
 }
 
-.texto{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #6a11cb;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(106, 17, 203, 1),
+    rgba(37, 117, 252, 1)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to right,
+    rgba(106, 17, 203, 1),
+    rgba(37, 117, 252, 1)
+  );
 }
-
-/* titulos */
-/* fuente krub */
-
-/* letra normal open sans */
